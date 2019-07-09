@@ -35,9 +35,9 @@ main img {
   margin-right: auto;
 }
 
-.header-image {
-  background-image: url("beach.jpg");
-  background-size: cover;
+.sticky {
+  position: sticky;
+  top: 0px;
 }
 
 nav {
