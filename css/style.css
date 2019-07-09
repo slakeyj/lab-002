@@ -1,21 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans&display=swap');
+
 h1 {
   text-align: center;
   color: #3A313B;
   font-size: 30px;
-  font-family:serif;
-  margin: 5%;  
+  margin: 3%; 
+  font-family: 'Karla', sans-serif;
 }
 
 body {
   background: #F7E1FA;
   margin: 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
   color: #3A313B;
   line-height: 200%; 
+  font-size: 18px;
 }
 
 img {
   width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero {
+  background-image: url("beach.jpg");
+  
+}
+
+nav {
+  text-align: center;
+  padding: 30px;
+}
+
+nav li {
+  display: inline;
+  margin: 30px;
+  padding: 20px;
+}
+
+nav a {
+  color: black;
 }
