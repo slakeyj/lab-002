@@ -1,6 +1,6 @@
 'use strict'
 
-// Prompt asking if Susanna has ever been to Japan.
+//Prompt asking if Susanna has ever been to Japan.
 var beenToJapan = prompt('Question 1: Has Susanna ever been to Japan?');
 
 if (beenToJapan.toLowerCase() === 'yes' || beenToJapan.toLowerCase() === 'y') {
@@ -10,6 +10,7 @@ if (beenToJapan.toLowerCase() === 'yes' || beenToJapan.toLowerCase() === 'y') {
 }
 console.log('The answer given to beenToJapan is ' + beenToJapan);
 
+// Prompt asking if Susanna enjoys doing yoga.
 var enjoysYoga = prompt('Question 2: Does Susanna enjoy doing yoga?');
 
 if (enjoysYoga.toLowerCase() === 'yes' || enjoysYoga.toLowerCase() === 'y') {
@@ -19,6 +20,7 @@ if (enjoysYoga.toLowerCase() === 'yes' || enjoysYoga.toLowerCase() === 'y') {
 }
 console.log('The answer given to enjoysYoga is ' + enjoysYoga);
 
+//Prompt asking if Susanna's favorite vegetable is radishes.
 var likesRadishes = prompt('Question 3: Are radishes Susanna\'s favorite vegetable?');
 
 if (likesRadishes.toLowerCase() === 'yes' || likesRadishes === 'y') {
@@ -28,6 +30,7 @@ if (likesRadishes.toLowerCase() === 'yes' || likesRadishes === 'y') {
 }
 console.log('The answer given to likesRadishes is ' + likesRadishes);
 
+//Prompts asking if Susanna has lived in Seattle all of her life.
 var fromSeattle = prompt('Has Susanna lived in Seattle all of her life?');
 
 if (fromSeattle.toLowerCase() === 'yes' || fromSeattle.toLowerCase === 'y') {
@@ -37,6 +40,7 @@ if (fromSeattle.toLowerCase() === 'yes' || fromSeattle.toLowerCase === 'y') {
 }
 console.log('The answer given to fromSeattle is ' + fromSeattle);
 
+//Prompts asking if Susanna has 3 siblings.
 var siblings = prompt('Does Susanna have 3 siblings?');
 
 if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase === 'y') {

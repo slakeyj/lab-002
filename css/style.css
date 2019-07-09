@@ -1,11 +1,21 @@
-ol {
-  color: blue;
+h1 {
+  text-align: center;
+  color: #3A313B;
+  font-size: 30px;
+  font-family:serif;
+  margin: 5%;  
 }
 
-ul li a{
-  background-color: pink;
+body {
+  background: #F7E1FA;
+  margin: 10%;
 }
 
-.teal {
-  color: teal;
+li {
+  color: #3A313B;
+  line-height: 200%; 
+}
+
+img {
+  width: 40%;
 }
