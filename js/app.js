@@ -3,6 +3,7 @@
 //Asks for the user's name.
 var userName = prompt("What is your name?");
 alert('Hello ' + userName + '!');
+console.log('The user\'s name is ' + userName + '.')
 //Prompt asking if Susanna has ever been to Japan.
 
 var beenToJapan = prompt('Question 1: Has Susanna ever been to Japan?');
@@ -53,3 +54,19 @@ if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase() === 'y') {
   alert('That\'s incorrect! She has 2 brothers and 1 sister.');
 }
 console.log('The answer given to siblings is ' + siblings);
+
+//A guessing game to guess how many years I've been married.
+var yearsMarried = prompt(userName + ', how many years have I been married?')
+console.log('The user entered the number ' + yearsMarried + ' for years married.')
+for (var i = 0; i < 6; i++) {
+  if (yearsMarried > 8) {
+    alert('Too high! Please try again!')
+    yearsMarried = prompt(userName + ", how many years have I been married?")
+  } else if (yearsMarried < 8) {
+    alert('Too low! Please try again!')
+    yearsMarried = prompt(userName + ", how many years have I been married?")
+  } else {
+    alert('That\'s correct!')
+    break;
+  }
+}
