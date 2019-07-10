@@ -11,7 +11,7 @@ h1 {
 
 body {
   background: #F7E1FA;
-  margin: 10%;
+  margin: 4%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
@@ -35,15 +35,27 @@ main img {
   margin-right: auto;
 }
 
+.border-radius {
+  border-radius: 80px 20px;
+}
+
 .sticky {
   position: sticky;
   top: 0px;
+}
+
+.header-image {
+  background-image: url("../beach.jpg");
+  background-size: cover;
+  height: 350px;
+  padding-top: 250px;
 }
 
 nav {
   text-align: center;
   padding: 0px;
   background: white;
+  display: inline-block
 }
 
 nav li {

@@ -1,6 +1,10 @@
 'use strict'
 
+//Asks for the user's name.
+var userName = prompt("What is your name?");
+alert('Hello ' + userName + '!');
 //Prompt asking if Susanna has ever been to Japan.
+
 var beenToJapan = prompt('Question 1: Has Susanna ever been to Japan?');
 
 if (beenToJapan.toLowerCase() === 'yes' || beenToJapan.toLowerCase() === 'y') {
@@ -14,7 +18,7 @@ console.log('The answer given to beenToJapan is ' + beenToJapan);
 var enjoysYoga = prompt('Question 2: Does Susanna enjoy doing yoga?');
 
 if (enjoysYoga.toLowerCase() === 'yes' || enjoysYoga.toLowerCase() === 'y') {
-  alert('That\'s correct! It helps keep her feel low-stress and bendy!')
+  alert('That\'s correct! It helps keep her feel low-stress and bendy!');
 } else {
   alert('That\'s incorrect!  Susanna enjoys yoga to keep herself flexible and to decrease her stress levels.');
 }
@@ -44,7 +48,7 @@ console.log('The answer given to fromSeattle is ' + fromSeattle);
 var siblings = prompt('Does Susanna have 3 siblings?');
 
 if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase() === 'y') {
-  alert('That\'s correct! She has 2 brothers and 1 sister.')
+  alert('That\'s correct! She has 2 brothers and 1 sister.');
 } else {
   alert('That\'s incorrect! She has 2 brothers and 1 sister.');
 }
