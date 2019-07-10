@@ -1,6 +1,7 @@
 'use strict'
 
 //Asks for the user's name.
+/*
 var userName = prompt("What is your name?");
 alert('Hello ' + userName + '!');
 console.log('The user\'s name is ' + userName + '.')
@@ -57,16 +58,45 @@ console.log('The answer given to siblings is ' + siblings);
 
 //A guessing game to guess how many years I've been married.
 var yearsMarried = prompt(userName + ', how many years have I been married?')
-console.log('The user entered the number ' + yearsMarried + ' for years married.')
-for (var i = 0; i < 6; i++) {
+console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
+for (var i = 0; i < 4; i++) {
   if (yearsMarried > 8) {
     alert('Too high! Please try again!')
-    yearsMarried = prompt(userName + ", how many years have I been married?")
+    yearsMarried = prompt(userName + ", how many years have I been married?");
+    console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
   } else if (yearsMarried < 8) {
-    alert('Too low! Please try again!')
-    yearsMarried = prompt(userName + ", how many years have I been married?")
+    alert('Too low! Please try again!');
+    yearsMarried = prompt(userName + ", how many years have I been married?");
+    console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.')
   } else {
     alert('That\'s correct!')
     break;
   }
+*/
+
+//A game to guess a Seattle neighborhood I have lived in.
+
+var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
+var neighborhoodGuess = prompt('Can you guess a Seattle neighborhood that I\'ve lived in?');
+console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
+
+for (var i = 0; i < seattleNeighborhoods.length; i++) {
+  if (neighborhoodGuess.toLowerCase() === seattleNeighborhoods[i]) {
+    console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
+    alert('Well done, that\'s correct!  I\'ve lived in Lower Queen Anne, Ballard, Capitol Hill, and Magnolia.');
+    break;
+  } else {
+    alert('That\'s incorrect, please try again.');
+    neighborhoodGuess = prompt('Can you guess a Seattle neighborhood that I\'ve lived in?')
+    console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
+  }
 }
+
+
+
+
+
+
+
+
+
