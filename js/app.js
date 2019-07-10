@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 //Asks for the user's name.
 /*
-var userName = prompt("What is your name?");
+var userName = prompt('What is your name?');
 alert('Hello ' + userName + '!');
 console.log('The user\'s name is ' + userName + '.')
 //Prompt asking if Susanna has ever been to Japan.
