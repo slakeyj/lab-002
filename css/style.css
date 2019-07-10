@@ -15,7 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-li {
+nav li {
   color: #3A313B;
   line-height: 200%; 
   font-size: 18px;
@@ -26,18 +26,15 @@ li {
   top: 0px;
 }
 
-.header-image {
-  background-image: url("../beach.jpg");
-  background-size: cover;
-  height: 350px;
-  padding-top: 250px;
+header {
+  border: 2px solid black;
 }
 
 nav {
   text-align: center;
   padding: 0px;
   background: white;
-  display: inline-block
+  display: inline;
 }
 
 nav li {
@@ -55,15 +52,17 @@ footer {
 }
 
 article {
-  display: inline-block;
   margin: 30px;
   padding: 30px;
   border: 1px solid black;
   background: white;
+  display: inline-block;
+  line-height: 200%;
 }
 
+
 ul {
-  list-style-type: circle;
+  list-style-type: disc;
 }
 
 ol {
@@ -73,4 +72,18 @@ ol {
 h2 {
   font-size: 30px;
   
+}
+
+.boxes {
+  position: relative;
+  width: 40%;
+ display: inline-block;
+ margin-left: auto;
+ marin-right; auto:
+}
+
+.small-bullet {
+  list-style-type: circle;
+  font-weight: 12px;
+  margin-left: 50px;
 }
