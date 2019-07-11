@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 //Asks for the user's name.
 
 var userName = prompt('What is your name?');
@@ -17,6 +17,7 @@ if (beenToJapan.toLowerCase() === 'yes' || beenToJapan.toLowerCase() === 'y') {
 } else {
   alert('That\'s correct!  Hopefully she\'ll get to go someday!');
   totalCorrect++;
+  console.log('The total correct is ' + totalCorrect);
 }
 console.log('The answer given to beenToJapan is ' + beenToJapan);
 
@@ -26,6 +27,7 @@ var enjoysYoga = prompt('Question 2: Does Susanna enjoy doing yoga?');
 if (enjoysYoga.toLowerCase() === 'yes' || enjoysYoga.toLowerCase() === 'y') {
   alert('That\'s correct! It helps keep her feel low-stress and bendy!');
   totalCorrect++;
+  console.log('The total correct is ' + totalCorrect);
 } else {
   alert('That\'s incorrect!  Susanna enjoys yoga to keep herself flexible and to decrease her stress levels.');
 }
@@ -39,6 +41,7 @@ if (likesRadishes.toLowerCase() === 'yes' || likesRadishes.toLowerCase() === 'y'
 } else {
   alert('That\'s correct!  She finds them to be absolutely repulsive!');
   totalCorrect++;
+  console.log('The total correct is ' + totalCorrect);
 }
 console.log('The answer given to likesRadishes is ' + likesRadishes);
 
@@ -50,6 +53,7 @@ if (fromSeattle.toLowerCase() === 'yes' || fromSeattle.toLowerCase() === 'y') {
 } else {
   alert('That\'s correct! She grew up in Eastern Washington, but has lived in Seattle for 9 years.');
   totalCorrect++;
+  console.log('The total correct is ' + totalCorrect);
 }
 console.log('The answer given to fromSeattle is ' + fromSeattle);
 
@@ -59,32 +63,34 @@ var siblings = prompt('Question 5: Does Susanna have 3 siblings?');
 if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase() === 'y') {
   alert('That\'s correct! She has 2 brothers and 1 sister.');
   totalCorrect++;
+  console.log('The total correct is ' + totalCorrect);
 } else {
   alert('That\'s incorrect! She has 2 brothers and 1 sister.');
 }
 console.log('The answer given to siblings is ' + siblings);
-
+*/
 //A guessing game to guess how many years I've been married.
-var yearsMarried = prompt('Question 6: how many years has Susanna been married?')
-console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
+
 for (var i = 0; i < 4; i++) {
+  var yearsMarried = prompt('Question 6: how many years has Susanna been married?');
+  console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
   if (yearsMarried > 8) {
-    alert('Too high! Please try again!')
-    yearsMarried = prompt(userName + ", how many years have I been married?");
-    console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
+    alert('Too high! Please try again!');
   } else if (yearsMarried < 8) {
     alert('Too low! Please try again!');
-    yearsMarried = prompt(userName + ", how many years have I been married?");
-    console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.')
   } else {
-    alert('That\'s correct!')
+    alert('That\'s correct!');
     totalCorrect++;
+    console.log('The total correct is ' + totalCorrect);
     break;
+  }
+  if (i === 3) {
+    alert('Sorry, you\'re out of guesses. I\'ve been married for 8 years.')
   }
 }
 
 //A game to guess a Seattle neighborhood I have lived in.
-
+/*
 var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
 
 var correct = false;
@@ -101,13 +107,17 @@ while (guessNumber < 6 && correct === false) {
       console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
       correct = true;
       totalCorrect++;
+      console.log('The total correct is ' + totalCorrect);
     }
   }
-  if (correct === false) {
+  if (correct === false && guessNumber < 5) {
     console.log('That is incorrect');
     alert('Sorry, that\'s incorrect.  Please try again.');
+  } else if (correct === false && guessNumber < 6) {
+    alert('Sorry, you\'re all out of guesses. I\'ve lived in Lower Queen Anne, Ballard, Capitol Hill, and Magnolia.');
   }
   guessNumber++;
 }
-
-
+*/
+//Gives the user their final score.
+alert('Thank you for playing, ' + userName + '! Your final score is ' + totalCorrect + ' out of 7.');
