@@ -12,9 +12,6 @@ h1 {
 
 
 
-div {
-  background: white;
-}
 
 #main-background {
   background: #F7E1FA;
@@ -24,6 +21,11 @@ body {
   border: 2px solid black;
   margin: 4%;
   font-family: 'Open Sans', sans-serif;
+  background: white;
+}
+
+main {
+  height: 1500px;
 }
 
 nav li {
@@ -59,15 +61,18 @@ footer {
 }
 
 article {
-  margin: 30px;
-  padding: 30px;
   border: 1px solid black;
   background: white;
-  display: inline-block;
-  width: 30%;
-  height: 375px;
   line-height: 200%;
   border-radius: 10px;
+  padding: 30px;
+}
+
+.content-item {
+  margin: 30px;
+  float: left;
+  width: 30%;
+  height: 375px;
 }
 
 ul {
@@ -98,6 +103,7 @@ h2 {
 
 #susannaimg {
   width: 350px;
+  padding: 0px 30px;
 }
 
 

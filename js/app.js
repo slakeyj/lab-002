@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 //Asks for the user's name.
 
 var userName = prompt('What is your name?');
@@ -68,16 +68,16 @@ if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase() === 'y') {
   alert('That\'s incorrect! She has 2 brothers and 1 sister.');
 }
 console.log('The answer given to siblings is ' + siblings);
-*/
+
 //A guessing game to guess how many years I've been married.
 
 for (var i = 0; i < 4; i++) {
   var yearsMarried = prompt('Question 6: how many years has Susanna been married?');
   console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
   if (yearsMarried > 8) {
-    alert('Too high! Please try again!');
+    alert('Sorry, too high!');
   } else if (yearsMarried < 8) {
-    alert('Too low! Please try again!');
+    alert('Sorry, too low!');
   } else {
     alert('That\'s correct!');
     totalCorrect++;
@@ -90,7 +90,7 @@ for (var i = 0; i < 4; i++) {
 }
 
 //A game to guess a Seattle neighborhood I have lived in.
-/*
+
 var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
 
 var correct = false;
@@ -118,6 +118,6 @@ while (guessNumber < 6 && correct === false) {
   }
   guessNumber++;
 }
-*/
+
 //Gives the user their final score.
 alert('Thank you for playing, ' + userName + '! Your final score is ' + totalCorrect + ' out of 7.');
