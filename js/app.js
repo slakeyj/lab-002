@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 
 //Asks for the user's name.
 
@@ -78,38 +78,36 @@ for (var i = 0; i < 4; i++) {
     console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.')
   } else {
     alert('That\'s correct!')
+    totalCorrect++;
     break;
   }
+}
 
-  //A game to guess a Seattle neighborhood I have lived in.
+//A game to guess a Seattle neighborhood I have lived in.
 
-  var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
-  var numGuesses = 0;
-  var neighborhoodGuess;
-  var correct = false;
+var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
 
-  while (numGuesses < 6) {
-    neighborhoodGuess = prompt('Question 7: Can you guess a Seattle neighborhood that Susanna has lived in?');
-    console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
-    if (correct === false) {
-      for (var index = 0; index < seattleNeighborhoods.length; index++) {
-        console.log('The number of guessess is ' + numGuesses);
-        console.log('The index is at ' + index);
-        if (neighborhoodGuess.toLowerCase() === seattleNeighborhoods[index]) {
-          console.log('Yay, that\'s right!');
-          alert('Well done, that\'s correct!  I\'ve lived in Lower Queen Anne, Ballard, Capitol Hill, and Magnolia.');
-          console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
-          correct = true;
-          break;
-        }
-      }
-    } if (correct === true) {
-      break;
+var correct = false;
+var guessNumber = 0;
+
+while (guessNumber < 6 && correct === false) {
+  var neighborhoodGuess = prompt('Question 7: Can you guess a Seattle neighborhood that Susanna has lived in?');
+  neighborhoodGuess = neighborhoodGuess.toLowerCase();
+
+  for (var neighborhoodIndex = 0; neighborhoodIndex < seattleNeighborhoods.length; neighborhoodIndex++) {
+    var neighborhood = seattleNeighborhoods[neighborhoodIndex];
+    if (neighborhood === neighborhoodGuess) {
+      alert('Well done, that\'s correct!  I\'ve lived in Lower Queen Anne, Ballard, Capitol Hill, and Magnolia.');
+      console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
+      correct = true;
+      totalCorrect++;
     }
+  }
+  if (correct === false) {
     console.log('That is incorrect');
     alert('Sorry, that\'s incorrect.  Please try again.');
-    numGuesses++;
   }
+  guessNumber++;
 }
-*
+
 

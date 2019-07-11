@@ -6,13 +6,21 @@ h1 {
   text-align: center;
   color: white;
   font-size: 60px;
-
   margin: 15px; 
   font-family: 'Karla', sans-serif;
 }
 
-body {
+
+
+div {
+  background: white;
+}
+
+#main-background {
   background: #F7E1FA;
+}
+
+body {
   border: 2px solid black;
   margin: 4%;
   font-family: 'Open Sans', sans-serif;
@@ -20,13 +28,8 @@ body {
 
 nav li {
   color: #3A313B;
-  line-height: 200%; 
+  margin: 10px; 
   font-size: 18px;
-}
-
-.sticky {
-  position: sticky;
-  top: 0px;
 }
 
 header {
@@ -36,6 +39,7 @@ header {
 nav {
   text-align: center;
   padding: 0px;
+  margin: 10px;
   background: white;
   display: inline;
 }
@@ -60,9 +64,11 @@ article {
   border: 1px solid black;
   background: white;
   display: inline-block;
+  width: 30%;
+  height: 375px;
   line-height: 200%;
+  border-radius: 10px;
 }
-
 
 ul {
   list-style-type: disc;
@@ -77,14 +83,6 @@ h2 {
   
 }
 
-.boxes {
-  position: relative;
-  width: 40%;
- display: inline-block;
- margin-left: auto;
- marin-right; auto:
-}
-
 .small-bullet {
   list-style-type: circle;
   font-weight: 12px;
@@ -97,3 +95,10 @@ h2 {
   height: 350px;
   padding-top: 250px;
 }
+
+#susannaimg {
+  width: 350px;
+}
+
+
+ 
