@@ -85,7 +85,7 @@ for (var i = 0; i < 4; i++) {
     break;
   }
   if (i === 3) {
-    alert('Sorry, you\'re out of guesses. I\'ve been married for 8 years.')
+    alert('Sorry, you\'re out of guesses. I\'ve been married for 8 years.');
   }
 }
 
