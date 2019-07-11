@@ -6,24 +6,40 @@ var userName;
 //Variable to track correct answers.
 var totalCorrect = 0;
 
-
-var correctResponses = ['y', 'yes', 'n', 'no'];
-
 var yesAlerts = ['That\'s incorrect, but she hopes to someday!', 'That\'s correct! It helps keep her feel low-stress and bendy!', 'That is incorrect.  She finds them to be absolutely repulsive!', 'That\'s incorrect.  She grew up in Eastern Washington, but has lived in Seattle for 9 years.', 'That\'s correct! She has 2 brothers and 1 sister.'];
 
 var noAlerts = ['That\'s correct!  Hopefully she\'ll get to go someday!', 'That\'s incorrect!  Susanna enjoys yoga to keep herself flexible and to decrease her stress levels.', 'That\'s correct!  She finds them to be absolutely repulsive!', 'That\'s correct! She grew up in Eastern Washington, but has lived in Seattle for 9 years.', 'That\'s incorrect! She has 2 brothers and 1 sister.'];
 
+var questions = ['Question 1: Has Susanna ever been to Japan?', 'Question 2: Does Susanna enjoy doing yoga?', 'Question 3: Are radishes Susanna\'s favorite vegetable?', 'Question 4: Has Susanna lived in Seattle all of her life?', 'Question 5: Does Susanna have 3 siblings?'];
 
+var points = [0, 1, 0, 0, 1];
+
+/*
 //Asks for the user's name.
 function askName() {
   userName = prompt('What is your name?');
   alert('Hello ' + userName + '!');
   console.log('The user\'s name is ' + userName + '.');
 }
+*/
 
+function yesNoQuestions() {
+  for(var index=0; index < yesAlerts.length; index++) {
+    var userAnswer = prompt(questions[index]);
+    
+    if (userAnswer === 'yes' || userAnswer === 'y') {
+      alert(yesAlerts[index]);
+      totalCorrect += points[index];
+    } else {
+      alert(noAlerts[index]);
+    }
 
+  }
+}
 
+yesNoQuestions();
 
+/*
 
 //Prompt asking if Susanna has ever been to Japan.
 function askJapan() {
@@ -101,7 +117,7 @@ function questionSibling(){
   console.log('The answer given to siblings is ' + siblings);
 }
 
-/*
+
 //A guessing game to guess how many years I've been married.
 function questionMarried() {
   for (var i = 0; i < 4; i++) {
