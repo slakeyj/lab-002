@@ -1,15 +1,15 @@
 'use strict';
 
 //Asks for the user's name.
-
+/*
 var userName = prompt('What is your name?');
 alert('Hello ' + userName + '!');
 console.log('The user\'s name is ' + userName + '.');
 
 //Variable to track correct answers.
 var totalCorrect = 0;
-//Prompt asking if Susanna has ever been to Japan.
 
+//Prompt asking if Susanna has ever been to Japan.
 var beenToJapan = prompt('Question 1: Has Susanna ever been to Japan?');
 
 if (beenToJapan.toLowerCase() === 'yes' || beenToJapan.toLowerCase() === 'y') {
@@ -70,7 +70,7 @@ if (siblings.toLowerCase() === 'yes' || siblings.toLowerCase() === 'y') {
 console.log('The answer given to siblings is ' + siblings);
 
 //A guessing game to guess how many years I've been married.
-
+*/
 for (var i = 0; i < 4; i++) {
   var yearsMarried = prompt('Question 6: how many years has Susanna been married?');
   console.log('The user entered the number ' + yearsMarried + ' for yearsMarried.');
@@ -90,9 +90,8 @@ for (var i = 0; i < 4; i++) {
 }
 
 //A game to guess a Seattle neighborhood I have lived in.
-
+/*
 var seattleNeighborhoods = ['lower queen anne', 'capitol hill', 'ballard', 'magnolia'];
-
 var correct = false;
 var guessNumber = 0;
 
@@ -121,3 +120,4 @@ while (guessNumber < 6 && correct === false) {
 
 //Gives the user their final score.
 alert('Thank you for playing, ' + userName + '! Your final score is ' + totalCorrect + ' out of 7.');
+*/
