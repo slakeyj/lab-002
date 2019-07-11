@@ -1,16 +1,19 @@
 
+
 @import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans&display=swap');
 
 h1 {
   text-align: center;
-  color: #3A313B;
-  font-size: 30px;
-  margin: 3%; 
+  color: white;
+  font-size: 60px;
+
+  margin: 15px; 
   font-family: 'Karla', sans-serif;
 }
 
 body {
   background: #F7E1FA;
+  border: 2px solid black;
   margin: 4%;
   font-family: 'Open Sans', sans-serif;
 }
@@ -27,7 +30,7 @@ nav li {
 }
 
 header {
-  border: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 nav {
@@ -44,7 +47,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: white;
 }
 
 footer {
@@ -86,4 +89,11 @@ h2 {
   list-style-type: circle;
   font-weight: 12px;
   margin-left: 50px;
+}
+
+#header-image {
+  background-image: url("../sunset.jpg");
+  background-size: cover;
+  height: 350px;
+  padding-top: 250px;
 }
