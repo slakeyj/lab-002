@@ -85,26 +85,18 @@ while (numGuesses < 6 && correct === false) {
   neighborhoodGuess = prompt('Can you guess a Seattle neighborhood that I\'ve lived in?');
   console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
   for (var index = 0; index < seattleNeighborhoods.length; index++) {
+    console.log('The number of guessess is ' + numGuesses);
+    console.log('The index is at ' + index);
     if (neighborhoodGuess.toLowerCase() === seattleNeighborhoods[index]) {
       alert('Well done, that\'s correct!  I\'ve lived in Lower Queen Anne, Ballard, Capitol Hill, and Magnolia.');
       console.log('The user guessed ' + neighborhoodGuess + ' for neighborhoodGuess.');
       correct = true;
-    }
-    if (correct === false) {
-      alert('Sorry, that\'s incorrect.  Please try again.')
-      numGuesses++;
-      console.log('Number of guessess is at ' +)
+      break;
     }
   }
-
+  alert('Sorry, that\'s incorrect.  Please try again.')
+  numGuesses++;
+  console.log('Number of guessess is at ' + numGuesses);
 }
-
-
-
-
-
-
-
-
 
 
