@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 //Asks for the user's name.
 //
 var userName = prompt('What is your name?');
@@ -120,3 +120,5 @@ while (guessNumber < 6 && correct === false) {
 
 //Gives the user their final score.
 alert('Thank you for playing, ' + userName + '! Your final score is ' + totalCorrect + ' out of 7.');
+
+*/

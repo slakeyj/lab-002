@@ -1,25 +1,25 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Karla|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 
 h1 {
   text-align: center;
-  color: white;
+  color: black;
   font-size: 60px;
-  margin: 15px; 
+  margin-top: 90px; 
+  margin-bottom: 170px;
   font-family: 'Karla', sans-serif;
+  
 }
 
-
-
-
 #main-background {
-  background: #F7E1FA;
+  background: #FBEDF3;
 }
 
 body {
   border: 2px solid black;
-  margin: 4%;
+  margin: 100px;
   font-family: 'Open Sans', sans-serif;
   background: white;
 }
@@ -28,32 +28,25 @@ main {
   height: 1500px;
 }
 
-nav li {
-  color: #3A313B;
-  margin: 10px; 
+nav li { 
   font-size: 18px;
-}
-
-header {
-  border-bottom: 2px solid black;
-}
-
-nav {
-  text-align: center;
-  padding: 0px;
-  margin: 10px;
-  background: white;
-  display: inline;
-}
-
-nav li {
   display: inline;
   margin: 30px;
   padding: 20px;
 }
 
+header {
+  border-bottom: 2px solid black;
+} 
+
+nav {
+  text-align: center;
+  padding: 0px;
+  margin: 100px;
+}
+
 nav a {
-  color: white;
+  color: black;
 }
 
 footer {
@@ -85,7 +78,10 @@ ol {
 
 h2 {
   font-size: 30px;
-  
+  margin: 15px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  display: block;
 }
 
 .small-bullet {
@@ -95,16 +91,35 @@ h2 {
 }
 
 #header-image {
-  background-image: url("../sunset.jpg");
+  background-image: url("../abstractpink.jpg");
   background-size: cover;
-  height: 350px;
-  padding-top: 250px;
+  height: 150px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 #susannaimg {
   width: 350px;
-  padding: 0px 30px;
+  padding: 0px 130px;
+  border-radius: 50%;
 }
 
+#box-one {
+  margin-left: 250px;
+}
 
- 
+#box-two {
+  margin-left: 120px;
+}
+
+ #box-three {
+  margin-left: 95px;
+ }
+
+ #box-four {
+  margin-left: 400px;
+ }
+
+ #resize-font {
+  font-size: 30px
+}
