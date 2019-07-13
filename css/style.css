@@ -79,8 +79,8 @@ ol {
 h2 {
   font-size: 30px;
   margin: 15px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  font-size: 40px;
   display: block;
 }
 
@@ -120,6 +120,16 @@ h2 {
   margin-left: 400px;
  }
 
- #resize-font {
+ #resize-top-ten {
   font-size: 30px
+}
+
+#welcome {
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+}
+
+#welcome-statement {
+  text-indent: 50px;
+  margin-top: 40px;
 }
