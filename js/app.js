@@ -29,12 +29,14 @@ function askName() {
 function yesNoQuestions() {
   for (var index = 0; index < yesAlerts.length; index++) {
     var userAnswer = prompt(questions[index]);
-    if (userAnswer === 'yes' || userAnswer === 'y') {
+    if (userAnswer.toLowerCase() === 'yes' || userAnswer.toLowerCase() === 'y') {
       alert(yesAlerts[index]);
       totalCorrect += yesPoints[index];
+      console.log('The total correct is ' + totalCorrect);
     } else {
       alert(noAlerts[index]);
       totalCorrect += noPoints[index];
+      console.log('The total correct is ' + totalCorrect);
     }
   }
 }
@@ -95,7 +97,6 @@ askName();
 yesNoQuestions();
 questionMarried();
 questionNeighborhoods();
-
 
 //Gives the user their final score.
 alert('Thank you for playing, ' + userName + '! Your final score is ' + totalCorrect + ' out of 7.');
